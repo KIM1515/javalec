@@ -12,7 +12,7 @@ public class _04_ifInIfElseIfElse {
 		if(score >= 90) 
 			if(score >= 95) {
 			System.out.println("A+학점입니다.");
-		else if
+			} else {
 			System.out.println("A0학점입니다.");
 		}
 		//85점 이상 B+
@@ -20,7 +20,7 @@ public class _04_ifInIfElseIfElse {
 		else if(score >= 80)
 			if(score >= 85) {
 			System.out.println("B+학점입니다.");
-			else 
+			} else {
 				System.out.println("B0학점입니다.");
 			}
 			
@@ -32,11 +32,9 @@ public class _04_ifInIfElseIfElse {
 			System.out.println("C학점입니다.");
 		//65점 이상 D+
 		//65점 미만 D0
-		else
+		} else {
 			System.out.println("D학점입니다.");
-		
-		
-
 	}
 
+}
 }
