@@ -2,7 +2,7 @@ package chap05_class;
 
 public class _03_method {
 	static int sum;//전역변수
-	static int multi;
+	static long multi;
 	static double divid;
 
 	public static void main(String[] args) {
@@ -58,7 +58,7 @@ public class _03_method {
 	
 	//오버로딩된 메소드(매개변수의 타입이나 개수가 다르고 메소드의 이름은 같다.
 	//void형태는 반환 값이 없는 타입이므로 return문이 필요없다.
-	public void add(int a, int b, int c) {
+	public static void add(int a, int b, int c) {
 		sum = a + b + c; 
 	}
 	

@@ -28,7 +28,7 @@ public class _04_inputCalc {
 		     break;
 		
 		case "*" : 
-			System.out.println(num1 + " " + op + " " + num2 + " = " + multi(num1, num2));
+			System.out.println(num1 + " " + op + " " + num2 + " = " + multiple(num1, num2));
 		    break;
 		
 		case "/" : 
@@ -42,14 +42,14 @@ public class _04_inputCalc {
 		return a + b;
 	}
 	
-	public int minus(int a, int b) {
+	public static int minus(int a, int b) {
 		return a - b;
 	}
-	public long muliple(int a, int b) {
+	public static long multiple(int a, int b) {
 		return a * b;
 	}
 	
-	public double divide(int a, int b) {
+	public static double divide(int a, int b) {
 		return(double) a / b;
 	}
 	
