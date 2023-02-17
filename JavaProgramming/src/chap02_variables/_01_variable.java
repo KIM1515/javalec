@@ -1,4 +1,4 @@
-package chat02_variables;
+package chap02_variables;
 
 public class _01_variable {
 

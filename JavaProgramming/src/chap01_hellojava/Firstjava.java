@@ -1,4 +1,4 @@
-package chat01_hellojava;
+package chap01_hellojava;
 
 public class Firstjava {
 

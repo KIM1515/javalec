@@ -37,7 +37,7 @@ public class _15_break {
 			System.out.println();
 		}
 		System.out.println("------------------");
-		//중첩 for문에서늬 break나 continue를 사용 할 경우 break되거나 continue 중
+		//중첩 for문에서의 break나 continue를 사용 할 경우 break되거나 continue 중
 		//원하는 반복문의 블록을 잘 파악해서 사용.
 		for(int i = 2; i <= 9; i++) {
 			
