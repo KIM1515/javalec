@@ -2,7 +2,7 @@ package chap99_etc.games;
 
 import java.util.Scanner;
 
-public class NumBaseball {
+public class NumBaseball extends GamesClass {
 	//1.필요함 변수들 선언
 	//스트라이크와 볼의 개수를 세어줄 변수
 	private int strike = 0;
@@ -44,7 +44,7 @@ public class NumBaseball {
 			ball = 0;
 			
 			//사용자 입력 값 3번 받아서 user배열에 담아줌
-			getuseInput();
+			getUserInput();
 			
 			//사용자 입력값 확인
 			System.out.println(user[0] + ", " + user[1] + ", " + user[2]);
@@ -81,9 +81,9 @@ public class NumBaseball {
 		
 		//사용자 입력 값 받아서 user배열에 담아주는 메소드(중복체크)
 		//getuseInput
-		public void getuseInput(Scanner sc) {
+		public void getUserInput() {
 			for(int i = 0; i < user.length; i++) {
-				System.out.println("1~9까지 중 숫자를 입력하세요. : ");
+				System.out.println("1 ~ 9까지의 정수 하나 입력 : ");
 				user[i] = sc.nextInt();
 				
 				//중복체크
@@ -91,14 +91,12 @@ public class NumBaseball {
 					if(checkDuplicate(user, i)) {
 						i--;
 						continue;
-				}
-				
+					}
 				}
 			}
 			
 			//중복값이 없는 온전한 user배열이 완성
 			gameCnt++;
-			
 		}
 		
 		//중복체크 메소드(리턴 값 boolean으로 true,false)

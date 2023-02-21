@@ -2,6 +2,8 @@ package chap99_etc;
 
 import java.util.Scanner;
 
+import chap99_etc.games.RockScissPaper;
+
 public class _03_rockScissPaper {
 
 	public static void main(String[] args) {
@@ -16,7 +18,7 @@ public class _03_rockScissPaper {
 			int selector = sc.nextInt();
 			
 			if(selector == 1) {
-				RockScissPaper rcp = new RockScissPaper();
+				RockScissPaper rsp = new RockScissPaper();
 				
 				rsp.start();
 			} else if(selector == 2) {

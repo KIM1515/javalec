@@ -1,5 +1,6 @@
 package chap99_etc;
 
+import chap99_etc.games.NumBaseball;
 
 public class _04_numBaseball {
 

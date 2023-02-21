@@ -2,7 +2,7 @@ package chap99_etc.games;
 
 import java.util.Scanner;
 
-public class RockscissPaper {
+public class RockScissPaper extends GamesClass {
 	//가위바위보 게임 객체를 생성하여 게임을 진행할 수 있도록 리팩토링
 	//몇 승 몇 무 몇 패 인지 셀 변수
 	private int win = 0;
@@ -52,7 +52,7 @@ public class RockscissPaper {
 		return (int)(Math.random() * 3) + 1;
 }
 	//사용자 입력값을 정수형으로 변환해주는 메소드
-	public int convertUserInput(Scanner sc); {
+	public int convertUserInput(Scanner sc) {
 		System.out.print("가위, 바위, 보 중 하나를 입력하세요. : ");
 		String userNumStr = sc.nextLine();
 		//가위바위보를 숫자로 담아줄 변수
